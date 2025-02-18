@@ -1,0 +1,13 @@
+{
+  "name": "Node-RED",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [1880],
+  "postCreateCommand": "node-red --userDir /workspace/.node-red",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
